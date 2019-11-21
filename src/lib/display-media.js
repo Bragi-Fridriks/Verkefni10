@@ -18,6 +18,9 @@ let image; // object sem inniheldur núverandi mynd á forsíðu.
  */
 async function getNewImage() {
     image = await getRandomImage();
+    while (image.type !== 'video') {
+        image = await getRandomImage();
+    }
     title.innerText = image.title;
     text.innerText = image.text;
     if (image.type === 'video') {
@@ -70,9 +73,10 @@ export function loadFavourites() {
             vidjo.setAttribute('width', '640');
             vidjo.setAttribute('height', '360');
             vidjo.setAttribute('frameborder', '0');
-            vidjo.setAttribute('apod__video');
+            vidjo.classList.add('apod__video');
             const item = el('div', titleEl, vidjo);
             item.classList.add('apod');
+            main.appendChild(item);
         }
         else {
             const imgEl = el('img');
@@ -80,8 +84,7 @@ export function loadFavourites() {
             imgEl.classList.add('apod__image');
             const item = el('div', titleEl, imgEl);
             item.classList.add('apod');
-            //main.appendChild(item);
+            main.appendChild(item);
         }
-        main.appendChild(item);
     });
 }
