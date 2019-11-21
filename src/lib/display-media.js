@@ -43,7 +43,7 @@ function saveCurrentImage() {
  * Upphafsstillir forsíðuna. Setur event listeners á takkana, og sækir eina mynd.
  *
  */
-export default function init(apod) {
+export default function init() {
     title = document.querySelector('.apod__title');
     text = document.querySelector('.apod__text');
     img = document.querySelector('.apod__image');
