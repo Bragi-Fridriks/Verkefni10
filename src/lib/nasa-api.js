@@ -4,7 +4,7 @@ import { randomDate } from './helpers';
  */
 
 // API lykill til að fá aðgang að nasa gögnum.
-const API_KEY = 'MghY22ar45xiV6qFZmLBiVN0y0PQ97J2O4eDBjZp';
+const API_KEY = 'ukl6ulyiwu7O5RxHQ41R5xaVxi89Zh3XOx4cP08q';
 // Slóð að sækja myndir frá. Dæmi um heila slóð https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2019-11-10
 const URL = 'https://api.nasa.gov/planetary/apod';
 

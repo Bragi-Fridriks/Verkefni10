@@ -80,7 +80,8 @@ export function loadFavourites() {
             imgEl.classList.add('apod__image');
             const item = el('div', titleEl, imgEl);
             item.classList.add('apod');
-            main.appendChild(item)
+            //main.appendChild(item);
         }
+        main.appendChild(item);
     });
 }
