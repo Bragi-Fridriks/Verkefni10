@@ -1,4 +1,4 @@
-import { randomDate } from '.helpers';
+import { randomDate } from './helpers';
 /**
  * Sækir Myndir frá nasa API. Til þess að sjá dæmi um json svari sjá apod.json
  */
