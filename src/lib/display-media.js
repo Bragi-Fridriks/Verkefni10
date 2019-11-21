@@ -16,7 +16,7 @@ let image; // object sem inniheldur núverandi mynd á forsíðu.
  * Sækir nýja Mynd af handahófi frá Nasa API og birtir hana á forsíðunni
  * ásamt titli og texta.
  */
-function getNewImage() {
+async function getNewImage() {
     image = await getRandomImage();
     title.innerText = image.title;
     text.innerText = image.text;
